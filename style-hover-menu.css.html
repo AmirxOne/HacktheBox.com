@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style-hover-menu.css">
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<div class="box-root-1-2">
+    <div class="top-menu-root">
+        <div class="line-hover">
+            <div class="bg-hover"></div>
+        </div>
+        <ul>
+            <li>OVERVIEW</li>
+            <li>RECOMMENDED</li>
+            <li>IN PROGRESS</li>
+            <li>TO-DO</li>
+            <li>KNOWLEDGE</li>
+        </ul>
+    </div>
+</div>
+<script>
+    let WidthLi = $("div.box-root-1-2 > div.top-menu-root > ul > li")
+    let LineHover = $("div.line-hover")
+    let padding = 48
+    WidthLi.hover(function () {
+        $('.bg-hover').css({'width': '200px'})
+        let width = $(this).width() + padding
+        let position = $(this).position()
+        LineHover.css({'width': width, 'left': position.left})
+    }, function () {
+        $('.bg-hover').css({'width': '0'})
+    })
+    WidthLi.hover(function () {
+        $(this).addClass('hover-1')
+    }, function () {
+        $(this).removeClass('hover-1')
+    })
+</script>
+</body>
+</html>

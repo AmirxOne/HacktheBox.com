@@ -1,0 +1,1830 @@
+@import "reboot.css";
+
+@font-face {
+    font-family: iranyekan;
+    src: url("../font/IRANYekanBold.ttf") format("truetype");
+}
+
+.all {
+    width: 1536px;
+    height: 721px;
+    overflow-y: hidden;
+}
+
+section.all > div.sidebar-left {
+    width: 212px;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(17, 25, 39);
+    display: inline-block;
+    float: left;
+    border-right: 1px solid rgb(26, 35, 50);
+}
+
+section.all > div.sidebar-left > div.top-bar {
+    width: 100%;
+    height: 64px;
+    background: url("../images/logo-htb.png") no-repeat center rgb(26, 35, 50);
+}
+
+/*nav-center-bar*/
+section.all > div.sidebar-left > div.center-bar {
+    width: 196px;
+    height: 481px;
+    background: rgb(17, 25, 39);
+    overflow-y: scroll;
+    padding: 8px;
+    font-weight: bold;
+    font-family: iranyekan, serif;
+}
+
+section.all > div.sidebar-left > div.center-bar::-webkit-scrollbar {
+    width: 0;
+}
+
+div.center-bar > nav > ul > li {
+    list-style: none;
+    width: 196px;
+    height: 45px;
+    line-height: 47px;
+    position: relative;
+}
+
+div.center-bar > nav > ul > li > a {
+    text-decoration: none;
+    display: block;
+    width: 142px;
+    height: inherit;
+    padding: 0 8px 0 46px;
+    font-size: 13px;
+    border-radius: 4px;
+    color: rgb(106, 117, 140);
+    font-weight: bold;
+    position: relative;
+}
+
+div.center-bar > nav > ul > li > a:hover {
+    background-color: rgb(26, 35, 50);
+}
+
+div.center-bar > nav > ul > li > a.logo-1::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../images/dashboard.png") no-repeat center;
+    position: absolute;
+    left: 11px;
+    top: 12px;
+}
+
+div.center-bar > nav > ul > li > a.logo-2::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../images/user.png") no-repeat center;
+    position: absolute;
+    left: 11px;
+    top: 12px;
+}
+
+div.center-bar > nav > ul > li > a.logo-3::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../images/teams.png") no-repeat center;
+    position: absolute;
+    left: 11px;
+    top: 12px;
+}
+
+div.center-bar > nav > ul > li > a.logo-4::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../images/ic-navbar-labs.png") no-repeat center;
+    position: absolute;
+    left: 11px;
+    top: 12px;
+}
+
+div.center-bar > nav > ul > li > a.logo-5::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../images/ic-navbar-rankings.png") no-repeat center;
+    position: absolute;
+    left: 11px;
+    top: 12px;
+}
+
+div.center-bar > nav > ul > li > a.logo-6::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../images/ic-navbar-bg.png") no-repeat center;
+    position: absolute;
+    left: 11px;
+    top: 12px;
+}
+
+div.center-bar > nav > ul > li > a.logo-7::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../images/ic-navbar-universities.png") no-repeat center;
+    position: absolute;
+    left: 11px;
+    top: 12px;
+}
+
+div.center-bar > nav > ul > li > a.logo-8::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../images/ic-navbar-careers.png") no-repeat center;
+    position: absolute;
+    left: 11px;
+    top: 12px;
+}
+
+div.center-bar > nav > ul > li > a.logo-9::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../images/ic-other.png") no-repeat center;
+    position: absolute;
+    left: 11px;
+    top: 12px;
+}
+
+div.center-bar > nav > ul > li > a.logo-10::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../images/ic-navbar-social.png") no-repeat center;
+    position: absolute;
+    left: 11px;
+    top: 12px;
+}
+
+li.line-1 {
+    border-bottom: 1px solid rgb(26, 35, 50);;
+}
+
+.arrow-down-1, .arrow-down-2, .arrow-down-3 {
+    display: block;
+    width: 20px;
+    height: 20px;
+    transition: all ease-in-out;
+    background: url("../images/left.png") no-repeat center;
+    position: absolute;
+    visibility: hidden;
+    right: 8px;
+    top: 13px;
+
+}
+
+div.center-bar:hover .arrow-down-1 {
+    visibility: visible;
+}
+
+div.center-bar:hover .arrow-down-2 {
+    visibility: visible;
+}
+
+div.center-bar:hover .arrow-down-3 {
+    visibility: visible;
+}
+
+li#logo-4-all {
+    height: 270px;
+    width: 196px;
+    display: none;
+    background: rgb(17, 25, 39)
+}
+
+li#logo-4-all > ul > li {
+    height: 45px;
+}
+
+li#logo-4-all > ul > li > a {
+    display: block;
+    width: 177px;
+    height: inherit;
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(106, 117, 140);
+    padding: 0 8px 0 10px;
+    border-radius: 4px;
+}
+
+li#logo-4-all > ul > li > a:hover {
+    background-color: rgb(26, 35, 50);
+}
+
+li#logo-8-all {
+    height: 90px;
+    width: 196px;
+    display: none;
+    background: rgb(17, 25, 39)
+}
+
+li#logo-8-all > ul > li {
+    height: 45px;
+}
+
+li#logo-8-all > ul > li > a {
+    display: block;
+    width: 179px;
+    height: inherit;
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(106, 117, 140);
+    padding: 0 8px 0 10px;
+    border-radius: 4px;
+}
+
+li#logo-8-all > ul > li > a:hover {
+    background-color: rgb(26, 35, 50);
+}
+
+li#logo-10-all {
+    height: 90px;
+    width: 196px;
+    display: none;
+    background: rgb(17, 25, 39)
+}
+
+li#logo-10-all > ul > li {
+    height: 45px;
+}
+
+li#logo-10-all > ul > li > a {
+    display: block;
+    width: 178px;
+    height: inherit;
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(106, 117, 140);
+    padding: 0 8px 0 10px;
+    border-radius: 4px;
+}
+
+li#logo-10-all > ul > li > a:hover {
+    background-color: rgb(26, 35, 50);
+}
+
+/*nav-center-bar-end*/
+
+/*nav-button-bar*/
+section.all > div.sidebar-left > div.button-bar {
+    width: 196px;
+    height: 144px;
+    background: rgb(17, 25, 39);
+    padding: 8px;
+    font-family: iranyekan, serif;
+    position: relative;
+}
+
+div.button-bar > ul > li {
+    width: 196px;
+    height: 48px;
+    line-height: 50px;
+    list-style: none;
+}
+
+div.button-bar > ul > li > a {
+    display: block;
+    width: 142px;
+    height: inherit;
+    text-decoration: none;
+    padding: 0 8px 0 46px;
+    border-radius: 4px;
+    color: rgb(106, 117, 140);
+    font-size: 13px;
+    position: relative;
+}
+
+div.button-bar > ul > li > a:hover {
+    background-color: rgb(26, 35, 50);
+}
+
+div.button-bar > ul > li > a.logo-11::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../images/ic-laptop.png") no-repeat center;
+    position: absolute;
+    left: 11px;
+    top: 14px;
+}
+
+div.button-bar > ul > li > a.logo-12::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../images/ic-support.png") no-repeat center;
+    position: absolute;
+    left: 11px;
+    top: 14px;
+}
+
+i.v-0 {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../images/ic-changelog.png") no-repeat center;
+    position: absolute;
+    left: 11px;
+    top: 14px;
+}
+
+i.v-1 {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../images/left - Copy.png") no-repeat center;
+    position: absolute;
+    right: 8px;
+    top: 15px;
+}
+
+div.button-bar > ul > li > div.logo-13 {
+    position: absolute;
+    width: 174px;
+    height: 234px;
+    padding: 8px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background: rgb(26, 35, 50);
+    border-radius: 5px;
+    left: 12px;
+    top: -100%;
+    display: none;
+}
+
+div.button-bar > ul > li > div.logo-13 > ul > li {
+    height: 101px;
+    width: 174px;
+    padding: 8px 0;
+    list-style: none;
+}
+
+div.button-bar > ul > li > div.logo-13 > ul > li > a {
+    display: block;
+    height: 93px;
+    width: 138px;
+    padding: 4px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    transition: all 300ms ease-in-out;
+}
+
+div.button-bar > ul > li > div.logo-13 > ul > li > a > span {
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+
+.line-ofoghi-1 {
+    border-color: #111927 !important;
+    height: 0;
+}
+
+div.button-bar > ul > li > div.logo-13 > ul > li > a > span.CHANGE-LOG {
+    color: chartreuse;
+!important;
+    margin-bottom: 8px;
+}
+
+div.button-bar > ul > li > div.logo-13 > ul > li > a > span.Version {
+    font-size: 15px;
+!important;
+}
+
+a.logo-13-1:hover {
+    background-color: rgb(44, 52, 66);
+}
+
+/*nav-button-bar-end*/
+
+div.line-sidebar {
+    width: 1px;
+    height: 100%;
+    background-color: rgb(17, 25, 39);
+    float: left;
+}
+
+div.line-sidebar > div.line-sidebar-top {
+    width: inherit;
+    height: 64px;
+    background-color: rgb(26, 35, 50);
+    transition: all 200ms 200ms linear;
+}
+
+div.line-sidebar > div.line-sidebar-button {
+    width: inherit;
+    height: 100%;
+    background-color: rgb(17, 25, 39);
+    transition: all 200ms 200ms linear;
+}
+
+div.line-sidebar:hover .line-sidebar-top {
+    background-color: chartreuse;
+}
+
+div.line-sidebar:hover .line-sidebar-button {
+    background-color: chartreuse;
+}
+
+/*all-box-root*/
+div.all-box-root {
+    width: 1322px;
+    height: 657px;
+    float: right;
+    overflow-y: scroll;
+}
+
+div.all-box-root::-webkit-scrollbar {
+    width: 6px;
+    height: 0;
+    background-color: rgb(20, 29, 43);
+}
+
+div.all-box-root::-webkit-scrollbar-thumb {
+    background-color: #263143;
+    border-radius: 50px;
+
+}
+
+div.all-box-root > div.box-root-1 {
+    width: 1316px;
+    height: 924px;
+    padding-right: 6px;
+    text-align: right;
+    background: url("../images/backgrond.png") no-repeat center;
+}
+
+div.all-box-root > div.box-root-1 > div.top {
+    width: 1292px;
+    height: 64px;
+    padding-right: 24px;
+    background-color: rgb(34, 27, 40);
+    font-family: iranyekan, serif;
+}
+
+div.all-box-root > div.box-root-1 > div.top > div.left {
+    width: 415px;
+    height: inherit;
+    padding: 0 10px 0 60px;
+    float: left;
+    background-color: rgb(34, 27, 40);
+    font-size: 14px;
+    line-height: 68px;
+    color: rgb(255, 62, 62);
+    position: relative;
+}
+
+div.all-box-root > div.box-root-1 > div.top > div.left::before {
+    content: " ";
+    height: inherit;
+    width: 50px;
+    position: absolute;
+    background: url("../images/info.png") no-repeat center rgb(57, 30, 42);
+    left: 0;
+    top: 0;
+}
+
+div.all-box-root > div.box-root-1 > div.top > div.right {
+    width: 255px;
+    height: 36px;
+    padding: 14px 0;
+    float: right;
+}
+
+div.all-box-root > div.box-root-1 > div.top > div.right > button {
+    width: 248px;
+    height: 36px;
+    background-color: rgb(34, 27, 40);
+    float: right;
+    border-radius: 5px;
+    transition: all 0.25s ease-in;
+    border: 1px solid rgb(175, 29, 42);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+div.all-box-root > div.box-root-1 > div.top > div.right > button:hover {
+    background-color: rgb(51, 30, 42);
+}
+
+div.all-box-root > div.box-root-1 > div.top > div.right > button > span {
+    display: block;
+    width: 248px;
+    height: 36px;
+    line-height: 36px;
+    font-family: iranyekan, serif;
+    color: rgb(175, 29, 42);
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+div.all-box-root > div.box-root-1 > div.box-root-1-1 {
+    width: 1246px;
+    height: 390px;
+    padding: 0 35px;
+}
+
+div.all-box-root > div.box-root-1 > div.box-root-1-1 > div.top-head {
+    width: 1246px;
+    height: 80px;
+    font-family: iranyekan, serif;
+}
+
+div.ANNOUNCEMENT {
+    width: 416px;
+    padding: 12px 0;
+    height: 56px;
+    float: left;
+}
+
+div.line-amod-1 {
+    width: 1px;
+    height: 56px;
+    background-color: rgb(26, 35, 50);
+    float: right;
+}
+
+div.ANNOUNCEMENT > span {
+    display: block;
+    width: 415px;
+    height: 28px;
+    font-size: 12px;
+    float: left;
+    text-align: left;
+    color: rgb(106, 117, 140);;
+}
+
+div.ANNOUNCEMENT > span.two {
+    font-size: 16px;
+!important;
+    color: white;
+!important;
+}
+
+div.CHANGELOG {
+    width: 391px;
+    padding: 12px 0 12px 25px;
+    height: 56px;
+    float: left;
+}
+
+div.CHANGELOG > span {
+    display: block;
+    width: 415px;
+    height: 28px;
+    font-size: 12px;
+    float: left;
+    text-align: left;
+    color: rgb(106, 117, 140);;
+}
+
+div.CHANGELOG > span.two {
+    font-size: 16px;
+!important;
+    color: white;
+!important;
+}
+
+div.PLAYERS {
+    width: 414px;
+    padding: 12px 0;
+    height: 56px;
+    float: left;
+}
+
+div.PLAYERS > span {
+    display: block;
+    width: 414px;
+    height: 28px;
+    font-size: 12px;
+    float: left;
+    text-align: right;
+    color: rgb(106, 117, 140);;
+}
+
+div.PLAYERS > span.two {
+    font-size: 16px;
+!important;
+    color: white;
+!important;
+}
+
+div.all-box-root > div.box-root-1 > div.box-root-1-1 > div.box-slid-root {
+    width: 1246px;
+    height: 286px;
+    padding: 12px 0;
+}
+
+div.box-slid-root > div.all-box-slider {
+    width: 514px;
+    height: 286px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(26, 35, 50);
+}
+
+div.box-slid-root > div.all-box-slider > div.slider {
+    width: 514px;
+    height: 286px;
+}
+
+div.box-slid-root > div.all-box-slider > div.slider a.item {
+    display: none;
+    width: 514px;
+    height: 286px;
+}
+
+div.box-slid-root > div.all-box-slider > div.slider a.item > img {
+    width: 514px;
+    height: 286px;
+}
+
+div.box-slid-root > div.all-box-slider > div.slider-nav {
+    width: 514px;
+    height: 28px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+div.box-slid-root > div.all-box-slider > div.slider-nav > ul {
+    width: 260px;
+    height: inherit;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.box-slid-root > div.all-box-slider > div.slider-nav > ul > li {
+    list-style: none;
+    width: 20px;
+    height: 2px;
+    background-color: rgba(211, 211, 211, 0.3);
+    cursor: pointer;
+}
+
+div.box-slid-root > div.all-box-slider > div.slider-nav > ul > li.active {
+    background-color: white;
+    transition: all 400ms linear;
+}
+
+div.box-slid-root > div.all-noob {
+    width: 708px;
+    height: 286px;
+    float: right;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(26, 35, 50);
+}
+
+div.box-slid-root > div.all-noob > div.noob-left {
+    width: 349px;
+    height: 286px;
+    border-right: 1px rgb(17, 25, 39) solid;
+}
+
+div.box-slid-root > div.all-noob > div.noob-left > div.noob-left-top {
+    height: 100px;
+    width: 309px;
+    padding: 20px;
+}
+
+div.box-slid-root > div.all-noob > div.noob-left > div.noob-left-top > i.badge-noob {
+    width: 100px;
+    height: 100px;
+    display: block;
+    float: left;
+    background: url("../images/badgesbg.png") no-repeat center;
+    position: relative;
+}
+
+div.box-slid-root > div.all-noob > div.noob-left > div.noob-left-top > i.badge-noob::before {
+    content: " ";
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    background: url("../images/badge-noob.png") no-repeat center;
+    left: 34px;
+    top: 35px;
+}
+
+div.box-slid-root > div.all-noob > div.noob-left > div.noob-left-top > div.text-noob-1 {
+    width: 189px;
+    height: 84px;
+    float: right;
+    padding: 8px 0 8px 20px;
+    text-align: left;
+    font-family: iranyekan, serif;
+}
+
+div.box-slid-root > div.all-noob > div.noob-left > div.noob-left-top > div.text-noob-1 > h3 {
+    color: white;
+    letter-spacing: -0.5px;
+}
+
+div.text-noob-1 > div.line-text-noob-1 {
+    width: 160px;
+    height: 6px;
+    border-radius: 25px;
+    background-color: rgb(65, 96, 35);
+    margin-top: 11px;
+}
+
+div.text-noob-1 > h6.text-1 {
+    color: rgb(65, 96, 35);
+    margin-top: 11px;
+    display: inline-block;
+    float: left;
+}
+
+div.text-noob-1 > h6.text-2 {
+    margin-top: 11px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+    float: left;
+    color: rgb(106, 117, 140);;
+}
+
+div.noob-left-button {
+    height: 60px;
+    width: 309px;
+    padding: 20px;
+    position: relative;
+}
+
+div.noob-left-button > section {
+    width: 0;
+    height: 20px;
+    background-color: rgb(26, 35, 50);
+    animation: noob linear 2s;
+    position: absolute;
+    right: 40px;
+    top: 38px;
+}
+
+@keyframes noob {
+    0% {
+        width: 290px;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+div.noob-left-button > hr {
+    height: 2px;
+    width: 270px;
+    background-color: rgb(146, 217, 27);
+    border: none;
+    margin: 27px 0 0 7px;
+    position: relative;
+}
+
+div.circle-1 {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    background-color: rgb(146, 217, 27);
+    position: absolute;
+    left: 19px;
+    top: 2.73em;
+    transition: all 250ms linear;
+}
+
+div.circle-2 {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    background-color: rgb(146, 217, 27);
+    position: absolute;
+    left: 44px;
+    top: 2.73em;
+    transition: all 250ms linear;
+}
+
+div.circle-3 {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    background-color: rgb(146, 217, 27);
+    position: absolute;
+    left: 69px;
+    top: 2.73em;
+    transition: all 250ms linear;
+}
+
+div.circle-4 {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    background-color: rgb(146, 217, 27);
+    position: absolute;
+    left: 94px;
+    top: 2.73em;
+    transition: all 250ms linear;
+}
+
+div.circle-5 {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    background-color: rgb(146, 217, 27);
+    position: absolute;
+    left: 119px;
+    top: 2.73em;
+    transition: all 250ms linear;
+}
+
+div.circle-6 {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    background-color: rgb(146, 217, 27);
+    position: absolute;
+    left: 144px;
+    top: 2.73em;
+    transition: all 250ms linear;
+}
+
+div.circle-7 {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    background-color: rgb(146, 217, 27);
+    position: absolute;
+    left: 169px;
+    top: 2.73em;
+    transition: all 250ms linear;
+}
+
+div.circle-8 {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    background-color: rgb(146, 217, 27);
+    position: absolute;
+    left: 194px;
+    top: 2.73em;
+    transition: all 250ms linear;
+}
+
+div.circle-9 {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    background-color: rgb(146, 217, 27);
+    position: absolute;
+    left: 219px;
+    top: 2.73em;
+    transition: all 250ms linear;
+}
+
+div.circle-10 {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    background-color: rgb(146, 217, 27);
+    position: absolute;
+    left: 244px;
+    top: 2.73em;
+    transition: all 250ms linear;
+}
+
+div.circle-11 {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    background-color: rgb(146, 217, 27);
+    position: absolute;
+    left: 269px;
+    top: 2.73em;
+    transition: all 250ms linear;
+}
+
+div.circle-12 {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    background-color: rgb(146, 217, 27);
+    position: absolute;
+    left: 294px;
+    top: 2.73em;
+    transition: all 250ms linear;
+}
+
+div.noob-left-button-plus {
+    height: 46px;
+    width: 309px;
+    padding: 0 20px;
+    text-align: left;
+    font-family: iranyekan, serif;
+    line-height: 31px;
+}
+
+div.noob-left-button-plus > span.Rank-Up {
+    color: rgb(146, 217, 27);
+    font-size: 14px;
+    float: left;
+}
+
+div.noob-left-button-plus > span.zero {
+    color: rgb(106, 117, 140);
+    font-size: 13px;
+    float: left;
+}
+
+div.noob-left-button-plus > span.Rank-icon {
+    width: 28px;
+    height: 28px;
+    display: block;
+    float: left;
+    border-radius: 25px;
+    margin-left: 10px;
+    background-color: rgba(146, 217, 27, 0.3);
+}
+
+div.noob-left-button-plus > span.Rank-icon > i {
+    display: block;
+    width: inherit;
+    height: inherit;
+    background: url("../images/upwards-arrow.png") no-repeat center;
+}
+
+div.box-slid-root > div.all-noob > div.noob-right {
+    width: 358px;
+    height: 286px;
+    float: right;
+}
+
+div.box-slid-root > div.all-noob > div.noob-right > div.noob-top {
+    width: 358px;
+    height: 192px;
+    border-bottom: 1px rgb(17, 25, 39) solid;
+}
+
+div.box-slid-root > div.all-noob > div.noob-right > div.noob-top > div.noob-top-right {
+    width: 85px;
+    height: inherit;
+    float: left;
+    box-sizing: border-box;
+    padding: 20px 0 20px 20px;
+    position: relative;
+}
+
+div.noob-top-right > span {
+    font-family: iranyekan, serif;
+    color: rgb(146, 217, 27);
+    font-size: 15px;
+}
+
+div.noob-top-right > div.pre {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background: rgba(211, 211, 211, 0.1) url("../images/left - Copy.png") no-repeat center;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+div.noob-top-right > div.next {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background: rgba(211, 211, 211, 0.1) url("../images/left - Copy.png") no-repeat center;
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    cursor: pointer;
+}
+
+div.box-slid-root > div.all-noob > div.noob-right > div.noob-top > div.noob-top-left {
+    width: 273px;
+    height: inherit;
+    box-sizing: border-box;
+    float: left;
+    text-align: left;
+    font-family: iranyekan, serif;
+    font-size: 15px;
+    color: rgb(106, 117, 140);
+    overflow: hidden;
+}
+
+div.noob-top-left div.slider-2 {
+    width: inherit;
+    height: inherit;
+}
+
+div.noob-top-left div.slider-2 > ul {
+    width: inherit;
+    height: inherit;
+}
+
+div.noob-top-left div.slider-2 > ul > li.item {
+    width: inherit;
+    height: inherit;
+    padding: 20px 20px 20px 3px;
+    box-sizing: border-box;
+    list-style: none;
+    display: none;
+}
+
+div.noob-top-left div.slider-2 > ul > li.item > i.icon-1 {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../images/ic-changelog.png") center no-repeat;
+    float: right;
+    margin-top: 51%;
+}
+
+div.noob-top-left div.slider-2 > ul > li.item > span.Points {
+    width: 20px;
+    height: 25px;
+    display: block;
+    float: right;
+    text-align: center;
+    margin-top: 51%;
+}
+
+div.noob-top-left div.slider-2 > ul > li.item > i.icon-2 {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../images/ic-other.png") center no-repeat;
+    float: right;
+    margin-top: 51%;
+}
+
+div.noob-top-left div.slider-2 > ul > li.item > span.User-Owns {
+    width: 20px;
+    height: 25px;
+    display: block;
+    float: right;
+    text-align: center;
+    margin-top: 51%;
+}
+
+div.noob-top-left div.slider-2 > ul > li.item > i.icon-3 {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../images/ic-feedback.png") center no-repeat;
+    float: right;
+    margin-top: 51%;
+}
+
+div.noob-top-left div.slider-2 > ul > li.item > span.System-Owns {
+    width: 20px;
+    height: 25px;
+    display: block;
+    float: right;
+    text-align: center;
+    margin-top: 51%;
+}
+
+div.noob-top-left div.slider-2 > ul > li.item > i.icon-4 {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../images/ic-navbar-rankings.png") center no-repeat;
+    float: right;
+    margin-top: 51%;
+}
+
+div.noob-top-left div.slider-2 > ul > li.item > span.Respect {
+    width: 20px;
+    height: 25px;
+    display: block;
+    float: right;
+    text-align: center;
+    margin-top: 51%;
+}
+
+div.noob-top-left div.slider-2 > ul > li.item > i.icon-5 {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../images/ic-navbar-labs.png") center no-repeat;
+    float: right;
+    margin-top: 51%;
+}
+
+div.noob-top-left div.slider-2 > ul > li.item > span.User-Bloods {
+    width: 20px;
+    height: 25px;
+    display: block;
+    float: right;
+    text-align: center;
+    margin-top: 51%;
+}
+
+div.noob-top-left div.slider-2 > ul > li.item > i.icon-6 {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../images/ic-navbar-bg.png") center no-repeat;
+    float: right;
+    margin-top: 51%;
+}
+
+div.noob-top-left div.slider-2 > ul > li.item > span.System-Bloods {
+    width: 20px;
+    height: 25px;
+    display: block;
+    float: right;
+    text-align: center;
+    margin-top: 51%;
+}
+
+div.noob-top-left div.slider-2 > ul > li.item > i.icon-7 {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../images/ic-other.png") center no-repeat;
+    float: right;
+    margin-top: 51%;
+}
+
+div.noob-top-left div.slider-2 > ul > li.item > span.Global-Ranking {
+    width: 20px;
+    height: 25px;
+    display: block;
+    float: right;
+    text-align: center;
+    margin-top: 51%;
+}
+
+div.box-slid-root > div.all-noob > div.noob-right > div.noob-button {
+    width: 318px;
+    height: 54px;
+    padding: 20px 20px;
+    font-family: iranyekan, serif;
+}
+
+div.noob-button div {
+    width: 36px;
+    height: 100%;
+    margin: 0;
+    float: left;
+    display: inline-block;
+}
+
+div.noob-button > div > span.PLAN {
+    float: left;
+    display: block;
+    color: rgb(106, 117, 140);
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+div.noob-button > div > span.Free {
+    color: white;
+    font-size: 18px;
+}
+
+div.noob-button > a.GO-VIP {
+    float: right;
+    margin-top: 15px;
+    color: rgb(146, 217, 27);
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+div.noob-button > a.GO-VIP:hover {
+    text-decoration: underline;
+
+}
+
+/************* make box-root-1-2 ***************/
+div.box-root-1-2 {
+    width: 1246px;
+    height: 400px;
+    padding: 0 35px;
+
+}
+
+div.box-root-1-2 > div.top-menu-root {
+    width: 100%;
+    height: 47px;
+    position: relative;
+}
+
+div.box-root-1-2 > div.top-menu-root > ul {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid rgb(26, 35, 50);
+    font-family: iranyekan, serif;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+div.box-root-1-2 > div.top-menu-root > ul > li {
+    list-style: none;
+    line-height: 47px;
+    font-size: 12px;
+    color: rgb(106, 117, 140);
+    padding: 0 24px;
+    cursor: pointer;
+}
+
+div.box-root-1-2 > div.top-menu-root > ul > li.hover-1 {
+    background-color: rgb(26, 35, 50);
+}
+
+div.box-root-1-2 > div.top-menu-root > ul > li.hover-2 {
+    color: lightgray;
+}
+
+div.line-hover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 107px;
+    background-color: rgb(157, 240, 0);
+    transition: all 500ms ease-in-out;
+}
+
+/* box down root */
+div.box-root-1-2 > div.box-down-root {
+    width: 100%;
+    height: 352px;
+    box-sizing: border-box;
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+div.box-root-1-2 > div.box-down-root > ul {
+    width: 6350px;
+    height: 100%;
+    transition: all 500ms linear;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+div.box-root-1-2 > div.box-down-root > ul > li {
+    width: 1246px;
+    height: 100%;
+    list-style: none;
+    margin-right: 20px;
+    overflow: hidden;
+    /*background-color: ;*/
+    position: relative;
+}
+
+div.box-root-1-2 > div.box-down-root > ul > li > div.OVERVIEW-next-pre {
+    width: 60px;
+    height: 3px;
+    margin: 20px auto 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div.box-root-1-2 > div.box-down-root > ul > li > div.OVERVIEW-next-pre > div.line-pre {
+    width: 25px;
+    height: 3px;
+    float: left;
+    border-radius: 20%;
+    background-color: #777777;
+    cursor: pointer;
+}
+
+div.box-root-1-2 > div.box-down-root > ul > li > div.OVERVIEW-next-pre > div.line-next {
+    width: 25px;
+    height: 3px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 20%;
+    background-color: #777777;
+    cursor: pointer;
+}
+
+div.box-root-1-2 > div.box-down-root > ul > li > div.OVERVIEW-next-pre > div.hover-3 {
+    background-color: white;
+}
+
+div.box-root-1-2 > div.box-down-root > ul > li > div.OVERVIEW-next-pre > div.hover-4 {
+    background-color: #777777;
+}
+
+div.box-root-1-2 > div.box-down-root > ul > li > ul.OVERVIEW-ul {
+    width: 1911px;
+    height: 100%;
+    display: flex;
+    transition: all 800ms linear;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+div.box-root-1-2 > div.box-down-root > ul > li > ul.OVERVIEW-ul li {
+    width: 250px;
+    height: 280px;
+    margin-right: 10px;
+    margin-left: 10px;
+    list-style: none;
+    font-family: iranyekan, serif;
+    background-color: rgb(26, 35, 50);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    transition: all 200ms linear;
+}
+
+div.box-root-1-2 > div.box-down-root > ul > li > ul.OVERVIEW-ul li:hover {
+    transform: scale(1.06);
+}
+
+div.box-root-1-2 > div.box-down-root > ul > li > ul.OVERVIEW-ul > li > img {
+    width: 158px;
+    height: 132px;
+    margin-top: 20px;
+}
+
+div.box-root-1-2 > div.box-down-root > ul > li > ul.OVERVIEW-ul > li > h3 {
+    width: 250px;
+    color: lightgray;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+div.box-root-1-2 > div.box-down-root > ul > li > ul.OVERVIEW-ul > li > p {
+    width: 250px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 24px 0;
+    color: rgb(106, 117, 140);
+    font-size: 13px;
+}
+
+div.emptyText {
+    width: 100%;
+    height: 158px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: iranyekan, serif;
+}
+
+div.emptyText > p {
+    width: 410px;
+    height: 68px;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(106, 117, 140);
+}
+
+
+/* end box down root */
+/********* end make box-root-1-2 ***************/
+
+/*all-box-root-end*/
+
+
+div.header {
+    width: 1298px;
+    height: 40px;
+    background-color: rgb(26, 35, 50);
+    float: right;
+    padding: 12px;
+    position: relative;
+}
+
+div.header > label > input.search {
+    width: 245px;
+    height: 40px;
+    float: left;
+    direction: ltr;
+    text-align: left;
+    background-color: rgb(20, 29, 43);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding-left: 45px;
+    outline: none;
+    font-family: iranyekan, serif;
+    font-size: 10pt;
+    caret-color: rgb(159, 239, 0)
+
+}
+
+div.header > label > input.search::placeholder {
+    color: rgb(106, 117, 140);
+}
+
+div.header > label > i.search {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: 23px;
+    top: 23px;
+    cursor: text;
+    background: url("../images/ic-search.png") no-repeat center;
+}
+
+button.head-1 {
+    width: 160px;
+    height: 40px;
+    background-color: rgb(17, 25, 39);
+    float: left;
+    margin-left: 20px;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer
+}
+
+button.head-1:hover {
+    background-color: rgb(159, 239, 0);
+}
+
+button.head-1:hover > span {
+    color: rgb(17, 25, 39);
+}
+
+button.head-1 > span {
+    color: rgb(159, 239, 0);
+    font-family: iranyekan, serif;
+    font-size: 7pt;
+    letter-spacing: 3px;
+}
+
+button.head-2 {
+    width: 170px;
+    height: 38px;
+    background-color: rgb(17, 25, 39);
+    float: right;
+    margin-right: 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(175, 29, 42);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+}
+
+button.head-2:hover {
+    background-color: rgb(51, 30, 42);
+}
+
+button.head-2 > span {
+    color: rgb(175, 29, 42);
+    font-family: iranyekan, serif;
+    font-size: 7pt;
+    line-height: 39px;
+    letter-spacing: 3px;
+    display: block;
+    height: 36px;
+    width: 130px;
+    float: right;
+    margin: 0;
+    padding: 0 10px 0 28px;
+    position: relative;
+}
+
+button.head-2 > span::before {
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/wifi.png") no-repeat center;
+    position: absolute;
+    left: 7px;
+    top: 7px;
+}
+
+div.head-2 {
+    width: 119px;
+    height: 34px;
+    position: absolute;
+    border-radius: 5px;
+    font-size: 13px;
+    color: white;
+    font-family: iranyekan, serif;
+    border: 1px solid rgb(17, 25, 39);
+    background-color: rgb(26, 35, 50, 0.8);
+    right: 37px;
+    top: 70px;
+    padding: 0 24px;
+    line-height: 36px;
+    display: none;
+}
+
+div.name {
+    width: 140px;
+    height: 38px;
+    float: right;
+    margin-right: 10px;
+    line-height: 39px;
+    position: relative;
+}
+
+div.name > div.baby {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 3px 0 3px 3px;
+    border-radius: 25px;
+    text-align: left;
+    background: url("../images/baby.png");
+    float: left;
+    cursor: pointer;
+
+}
+
+div.name > span.amirxone {
+    display: block;
+    float: left;
+    font-family: iranyekan, serif;
+    letter-spacing: -0.5pt;
+    color: white;
+    font-size: 11pt;
+    padding-right: 38px;
+    position: relative;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+div.name > span.amirxone > i.amirone {
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url("../images/left.png") no-repeat center;
+    position: absolute;
+    float: left;
+    right: 14px;
+    top: 10px;
+}
+
+div.name > span.amirxone > i.amione {
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url("../images/left.png") no-repeat center;
+    position: absolute;
+    float: left;
+    right: 14px;
+    top: 10px;
+    transform: rotate(180deg);
+}
+
+div.menu-head {
+    width: 180px;
+    height: 234px;
+    padding: 10px 0;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background-color: rgb(26, 35, 50);
+    position: absolute;
+    border-radius: 5px;
+    top: 62px;
+    right: 0;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+div.name > div.menu-head > ul > li {
+    list-style: none;
+    height: 39px;
+    width: 180px;
+    cursor: pointer;
+}
+
+div.name > div.menu-head > ul > li > a {
+    display: block;
+    height: 39px;
+    width: 165px;
+    padding-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: iranyekan, serif;
+    font-size: 13px;
+    transition: all 0.3s linear;
+}
+
+div.name > div.menu-head > ul > li > a.color-1 {
+    color: rgb(159, 239, 0);
+!important;
+}
+
+div.name > div.menu-head > ul > li > a:hover {
+    background-color: rgb(44, 52, 66);
+}
+
+div.header > ul {
+    width: 162px;
+    height: 38px;
+    float: right;
+    margin: 0;
+}
+
+div.header > ul > li {
+    float: right;
+    height: 38px;
+    width: 54px;
+    list-style: none;
+    position: relative;
+
+}
+
+div.header > ul > li > a.ic-support\.svg {
+    display: block;
+    width: 34px;
+    height: inherit;
+    position: relative;
+    background: url("../images/ic-support.png") no-repeat center;
+}
+
+div.header > ul > li > a.ic-support\.svg::after {
+    content: " ";
+    display: block;
+    width: 1px;
+    height: 25px;
+    background-color: rgb(17, 25, 39);
+    position: absolute;
+    top: 8px;
+    right: -10px;
+}
+
+div.header > ul > li > a.ic-feedback\.svg {
+    display: block;
+    width: 34px;
+    height: inherit;
+    position: relative;
+    background: url("../images/ic-feedback.png") no-repeat center;
+}
+
+div.header > ul > li > a.ic-feedback\.svg::after {
+    content: " ";
+    display: block;
+    width: 1px;
+    height: 25px;
+    background-color: rgb(17, 25, 39);
+    position: absolute;
+    top: 8px;
+    right: -10px;
+}
+
+div.header > ul > li > a.ic-swagshop\.svg {
+    display: block;
+    width: 34px;
+    height: inherit;
+    position: relative;
+    background: url("../images/ic-swagshop.png") no-repeat center;
+}
+
+div.header > ul > li > a.ic-swagshop\.svg::after {
+    content: " ";
+    display: block;
+    width: 1px;
+    height: 25px;
+    background-color: rgb(17, 25, 39);
+    position: absolute;
+    top: 8px;
+    right: -10px;
+}
+
+div.header > ul > li > div.ic-support\.svg {
+    color: white;
+    width: 70px;
+    height: 34px;
+    font-family: iranyekan, serif;
+    font-size: 13px;
+    line-height: 36px;
+    border-radius: 5px;
+    border: 1px solid rgb(17, 25, 39);
+    background-color: rgb(26, 35, 50);
+    position: absolute;
+    right: -8px;
+    top: 40px;
+    padding: 0 11px;
+    display: none;
+}
+
+div.header > ul > li > div.ic-feedback\.svg {
+    color: white;
+    width: 56px;
+    height: 34px;
+    font-family: iranyekan, serif;
+    font-size: 13px;
+    line-height: 36px;
+    border-radius: 5px;
+    border: 1px solid rgb(17, 25, 39);
+    background-color: rgb(26, 35, 50);
+    position: absolute;
+    right: -8px;
+    top: 40px;
+    padding: 0 18px;
+    display: none;
+}
+
+div.header > ul > li > div.ic-swagshop\.svg {
+    color: white;
+    width: 60px;
+    height: 34px;
+    font-family: iranyekan, serif;
+    font-size: 13px;
+    line-height: 36px;
+    border-radius: 5px;
+    border: 1px solid rgb(17, 25, 39);
+    background-color: rgb(26, 35, 50);
+    position: absolute;
+    right: -8px;
+    top: 40px;
+    padding: 0 16px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
