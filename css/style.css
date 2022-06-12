@@ -10,6 +10,10 @@
     height: 721px;
     overflow-y: hidden;
 }
+body::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
 
 section.all > div.sidebar-left {
     width: 212px;
